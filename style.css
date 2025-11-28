@@ -1,0 +1,125 @@
+/* --- Styles de base --- */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f0ff; /* bleu ciel très clair */
+  color: #003366; /* bleu roi foncé */
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #002a80; /* bleu roi profond */
+}
+
+/* --- En-tête --- */
+header {
+  background-color: #d9d9d9; /* gris clair */
+  color: #002a80; /* bleu roi pour le texte du titre */
+  padding: 30px 10px; /* moins d’espace vertical */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* --- Sections générales --- */
+section {
+  padding: 40px 20px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* --- Section présentation --- */
+#presentation img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid #66a3ff; /* bleu clair autour de la photo */
+}
+
+#presentation p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #003366;
+}
+
+/* --- Section projets --- */
+#projets {
+  background-color: #cce0ff; /* bleu ciel clair */
+}
+
+.projet {
+  background-color: #e6f0ff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 6px solid #0033a0;
+  color: #002a80;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* --- Section contact --- */
+#contact {
+  text-align: center;
+}
+
+#contact-btn {
+  background-color: #0033a0; /* bleu roi */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contact-btn:hover {
+  background-color: #0055ff; /* bleu plus clair au survol */
+}
+
+form {
+  margin-top: 20px;
+}
+
+input, textarea {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #99bbff;
+  border-radius: 6px;
+  background-color: #f5f9ff;
+}
+
+form button {
+  background-color: #0055ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0033a0;
+}
+
+/* --- Pied de page --- */
+footer {
+  background-color: #0033a0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

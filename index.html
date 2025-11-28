@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenue sur mon Portfolio</h1>
+  </header>
+
+  <section id="presentation">
+    <h2>À propos de moi</h2>
+    <img src="/544f27ad-4759-426e-912c-7432daa945f5.jpeg" alt="Photo de moi">
+    <p>
+      Je suis une développeuse web passionnée par la création d’applications modernes, 
+      interactives et performantes. J’aime explorer de nouvelles technologies et relever 
+      des défis à travers différents projets de développement web et de jeux vidéo.
+    </p>
+  </section>
+
+  <section id="projets">
+    <h2>Mes Projets</h2>
+
+    <div class="projet">
+      <h3>💻 Site Web E-commerce (PFA)</h3>
+      <p>
+        Réalisation d’un site web complet de e-commerce en <strong>HTML, CSS, JavaScript et PHP</strong>.  
+        Ce projet inclut la gestion des produits, un panier dynamique et une interface utilisateur fluide.  
+        L’objectif était de mettre en pratique les compétences front-end et back-end acquises lors de ma formation.
+      </p>
+    </div>
+
+    <div class="projet">
+      <h3>🎮 Mini Jeu 2D (Unity & C#)</h3>
+      <p>
+        Développement d’un jeu 2D avec le moteur <strong>Unity</strong> et le langage <strong>C#</strong>.  
+        Le jeu comprend la gestion des collisions, du score et des niveaux, ainsi qu’une interface simple et intuitive.  
+        Ce projet m’a permis d’explorer la logique du gameplay et la programmation orientée objet.
+      </p>
+    </div>
+
+    <div class="projet">
+      <h3>🧑‍💼 Application Web de Gestion des Employés (Stage d’été)</h3>
+      <p>
+        Création d’une application web interne pour la <strong>gestion des employés</strong> lors de mon stage d’été.  
+        L’application permet la gestion des profils, des départements et des horaires via une interface web conviviale.  
+        Ce projet a renforcé mes compétences en <strong>développement full stack</strong> et en conception de bases de données.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <button id="contact-btn">Ouvrir le formulaire</button>
+
+    <form id="contact-form" style="display:none;">
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mon Portfolio</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('contact-btn');
+    const form = document.getElementById('contact-form');
+    btn.addEventListener('click', () => {
+      form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>
